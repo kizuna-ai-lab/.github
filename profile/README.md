@@ -42,7 +42,7 @@ Kizuna AI Labは、人工知能の力を活用して人々の相互理解と繋�
 
 ## 🚀 Featured Projects | 主要プロジェクト
 
-### [Sokuji (即時)](https://github.com/kizuna-ai-lab/sokuji)
+### [Sokuji (即時)](https://github.com/kizuna-ai-lab/sokuji) | [Tsuyaku API (通訳)](https://github.com/kizuna-ai-lab/sokuji-tsuyaku-api)
 
 <table>
 <tr>
@@ -52,13 +52,11 @@ Kizuna AI Labは、人工知能の力を活用して人々の相互理解と繋�
 
 A cross-platform desktop application for real-time speech translation. Sokuji captures live conversations and delivers instant translations, enabling seamless communication across language barriers.
 
-**Key Features:**
-- 🎙️ Real-time speech-to-translation-to-speech pipeline
-- 🌐 Multi-provider AI support (OpenAI, Google Gemini, Palabra.ai)
-- 💻 Cross-platform (Windows, macOS, Linux)
-- 🎧 Advanced audio processing with echo cancellation
-- 🌍 Support for 35+ languages
-- ♿ Browser extension for web accessibility
+**What it does:**
+- 🎙️ Translates speech in real-time as you speak
+- 🌍 Supports 35+ languages
+- 💻 Works on Windows, macOS, and Linux
+- ♿ Includes browser extension for web accessibility
 
 </td>
 <td width="50%">
@@ -67,64 +65,11 @@ A cross-platform desktop application for real-time speech translation. Sokuji ca
 
 リアルタイム音声翻訳のためのクロスプラットフォームデスクトップアプリケーション。Sokujiはライブ会話を捉え、即座に翻訳を提供し、言語の壁を越えたシームレスなコミュニケーションを実現します。
 
-**主な機能：**
-- 🎙️ リアルタイム音声認識→翻訳→音声合成パイプライン
-- 🌐 複数のAIプロバイダー対応（OpenAI、Google Gemini、Palabra.ai）
-- 💻 クロスプラットフォーム対応（Windows、macOS、Linux）
-- 🎧 エコーキャンセレーション搭載の高度な音声処理
+**できること：**
+- 🎙️ 話しながらリアルタイムで翻訳
 - 🌍 35以上の言語に対応
+- 💻 Windows、macOS、Linuxで動作
 - ♿ Webアクセシビリティのためのブラウザ拡張機能
-
-</td>
-</tr>
-</table>
-
----
-
-### Sokuji Tsuyaku API (即時通訳API)
-
-<table>
-<tr>
-<td width="50%">
-
-**English**
-
-A specialized real-time translation API server powering the Sokuji ecosystem. Built on a streamlined STT → Translation → TTS pipeline optimized for low-latency interpretation.
-
-**Key Features:**
-- ⚡ Sub-400ms end-to-end latency for real-time translation
-- 🔌 OpenAI-compatible API for easy integration
-- 🌐 WebSocket & WebRTC support for real-time communication
-- 🤖 1000+ language pairs via MarianMT models
-- 🎯 Dynamic model loading with intelligent caching
-- 🚀 Optional GPU acceleration for enhanced performance
-
-**Technology Stack:**
-- [MarianMT](https://huggingface.co/Helsinki-NLP) for translation
-- [faster-whisper](https://github.com/SYSTRAN/faster-whisper) for STT
-- [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M) & [Piper](https://github.com/rhasspy/piper) for TTS
-- [Silero VAD](https://github.com/snakers4/silero-vad) for voice detection
-
-</td>
-<td width="50%">
-
-**日本語**
-
-Sokujiエコシステムを支える専用のリアルタイム翻訳APIサーバー。低遅延通訳に最適化された、STT（音声認識）→翻訳→TTS（音声合成）のストリームラインパイプラインで構築されています。
-
-**主な機能：**
-- ⚡ リアルタイム翻訳のエンドツーエンド遅延400ミリ秒未満
-- 🔌 OpenAI互換APIによる簡単な統合
-- 🌐 リアルタイム通信のためのWebSocket & WebRTCサポート
-- 🤖 MarianMTモデルによる1000以上の言語ペア対応
-- 🎯 インテリジェントキャッシング機能付き動的モデルロード
-- 🚀 パフォーマンス向上のためのオプションGPUアクセラレーション
-
-**技術スタック：**
-- 翻訳: [MarianMT](https://huggingface.co/Helsinki-NLP)
-- STT: [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
-- TTS: [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M) & [Piper](https://github.com/rhasspy/piper)
-- 音声検出: [Silero VAD](https://github.com/snakers4/silero-vad)
 
 </td>
 </tr>
@@ -187,6 +132,45 @@ AI技術を活用し、以下のような世界を創造すること：
 - アクセシビリティの課題が世界を理解し体験することを阻まない
 - テクノロジーが隔たりではなく橋となる
 - すべての人がコミュニケーションを取り、理解し、理解される
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🔒 Privacy & Technology Philosophy | プライバシーと技術哲学
+
+<table>
+<tr>
+<td width="50%">
+
+**English**
+
+We believe privacy is a fundamental right, not a luxury. That's why all our projects are open source and designed for self-hosting—giving you complete control over your data.
+
+We're also committed to the future of edge AI. As on-device AI capabilities advance, our tools are built to leverage local processing, reducing reliance on cloud services and keeping your conversations private by default.
+
+**Our Commitments:**
+- 🔓 **Fully Open Source** - Transparent code you can audit and trust
+- 🏠 **Self-Hosting Ready** - Run everything on your own infrastructure
+- 📱 **Edge AI Prepared** - Designed for on-device processing as technology evolves
+- 🔐 **Privacy by Default** - Your data stays yours
+
+</td>
+<td width="50%">
+
+**日本語**
+
+プライバシーは贅沢品ではなく、基本的な権利であると私たちは信じています。だからこそ、すべてのプロジェクトをオープンソースとし、セルフホスティングできるように設計しています。あなたのデータを完全にコントロールできます。
+
+また、エッジAIの未来にコミットしています。デバイス上でのAI処理能力が進化するにつれ、私たちのツールはローカル処理を活用し、クラウドサービスへの依存を減らし、会話をデフォルトでプライベートに保つように構築されています。
+
+**私たちの約束：**
+- 🔓 **完全オープンソース** - 監査可能で信頼できる透明なコード
+- 🏠 **セルフホスティング対応** - 自分のインフラで全てを実行可能
+- 📱 **エッジAI対応** - 技術の進化に伴うデバイス上処理に対応
+- 🔐 **デフォルトでプライバシー保護** - あなたのデータはあなたのもの
 
 </td>
 </tr>
